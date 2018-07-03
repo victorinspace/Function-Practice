@@ -44,7 +44,10 @@ console.assert(sum(-2, -57) === -59)
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-
+function avg(a, b, c) {
+	let theAvg = (a + b + c) / 3
+	return theAvg
+}
 
 console.assert(avg(2,3,4) === 3)
 console.assert(avg(234, 63, 234) === 177)
