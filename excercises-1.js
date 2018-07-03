@@ -92,11 +92,14 @@ console.assert(greaterThan(-234, 1) === false)
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
-/*
+function greet(name) {
+	return "Hello, " + name + "!"
+}
+
 console.assert(greet("Michael") === "Hello, Michael!")
 console.assert(greet("R2D2") === "Hello, R2D2!")
 console.assert(greet("Iron Man") === "Hello, Iron Man!")
-*/
+
 
 // Q6
 // Write a function called `madlib` that takes
@@ -108,6 +111,16 @@ console.assert(greet("Iron Man") === "Hello, Iron Man!")
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+
+function madLib(word1, word2, word3, word4) {
+	return "The " + word1 + " jumped over the " + word2 + " to " + word3 + " the " + word4 + "."
+}
+
+
+console.assert(madLib("fox", "fence", "catch", "rabbit") === "The fox jumped over the fence to catch the rabbit.")
+// console.assert(madLib("R2D2") === "Hello, R2D2!")
+// console.assert(madLib("Iron Man") === "Hello, Iron Man!")
+
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
