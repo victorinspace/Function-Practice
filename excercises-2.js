@@ -21,9 +21,19 @@ console.assert(max(-23, 12) === 12)
 // numbers as arguments and returns the largest of them.
 // ---------------------
 
-// console.assert(maxOfThree(2,56,3) === 56)
-// console.assert(maxOfThree(12,3,4) === 12)
-// console.assert(maxOfThree(-12,4,-5) === 4)
+function maxOfThree(num1, num2, num3) {
+	if (num1 > num2 && num1 > num3) {
+		return num1
+	} else if (num2 > num1 && num2 > num3) {
+		return num2
+	} else {
+		return num3
+	}
+}
+
+console.assert(maxOfThree(2,56,3) === 56)
+console.assert(maxOfThree(12,3,4) === 12)
+console.assert(maxOfThree(-12,4,-5) === 4)
 
 // ---------------------
 // Write a function that takes a character (i.e. a 
