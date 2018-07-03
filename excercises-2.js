@@ -41,12 +41,51 @@ console.assert(maxOfThree(-12,4,-5) === 4)
 // vowel, false otherwise.
 // ---------------------
 
-// console.assert(isVowel(0) === false);
-// console.assert(isVowel("B") === false);
-// console.assert(isVowel("b") === false);
-// console.assert(isVowel("a") === true);
-// console.assert(isVowel("E") === true);
-// console.assert(isVowel("2") === false)
+function isVowel(str) {
+	switch(str) {
+		case 'A':
+			return true
+			break
+		case 'a':
+			return true
+			break
+		case 'E':
+			return true
+			break
+		case 'e':
+			return true
+			break
+		case 'I':
+			return true
+			break
+		case 'i':
+			return true
+			break
+		case 'O':
+			return true
+			break
+		case '0':
+			return true
+			break
+		case 'U':
+			return true
+			break
+		case 'u':
+			return true
+			break
+		default:
+			return false
+			break
+	}
+	
+}
+
+console.assert(isVowel(0) === false);
+console.assert(isVowel("B") === false);
+console.assert(isVowel("b") === false);
+console.assert(isVowel("a") === true);
+console.assert(isVowel("E") === true);
+console.assert(isVowel("2") === false)
 
 // ---------------------
 // Write a function translate() that will translate 
