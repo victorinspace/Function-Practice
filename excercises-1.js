@@ -32,6 +32,10 @@
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
 
+function sum(a, b) {
+	return a + b
+}
+
 console.assert(sum(2,4) === 6)
 console.assert(sum(45, 23) === 68)
 console.assert(sum(-2, -57) === -59)
@@ -40,11 +44,12 @@ console.assert(sum(-2, -57) === -59)
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-/*
+
+
 console.assert(avg(2,3,4) === 3)
 console.assert(avg(234, 63, 234) === 177)
 console.assert(avg(123,234,345) === 234)
-*/
+
 
 // Q3
 // Write a function called `getLength` that takes one
