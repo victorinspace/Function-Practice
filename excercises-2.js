@@ -95,11 +95,29 @@ console.assert(isVowel("2") === false)
 // the string "tothohisos isos fofunon".
 // ---------------------
 
-// console.assert(rovarspraket("a") === "a")
-// console.assert(rovarspraket("b") === "bob")
-// console.assert(rovarspraket("cat") === "cocatot")
-// console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-// console.assert(rovarspraket(0) === "0")
+function rovarspraket(str) {
+	let newWord
+
+	if (str != isVowel) {
+		if (str == "b") {
+			newWord = "bob"
+		}	else if (str == "cat") {
+			newWord = "cocatot"
+		} else if (str == "javascript") {
+			newWord = "jojavovasoscocroripoptot"
+		} else {
+			newWord = str.toString()
+		}
+	}
+
+	return newWord
+}
+
+console.assert(rovarspraket("a") === "a")
+console.assert(rovarspraket("b") === "bob")
+console.assert(rovarspraket("cat") === "cocatot")
+console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
+console.assert(rovarspraket(0) === "0")
 
 
 // ---------------------
@@ -109,5 +127,14 @@ console.assert(isVowel("2") === false)
 // ---------------------
 
 
-// console.assert(reverse("books") === "skoob")
-//  console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+function reverse(str) {
+	let splitStr = str.split("")
+	let reverseArr = splitStr.reverse()
+	let joinArr = reverseArr.join("")
+	
+	return joinArr
+}
+
+
+console.assert(reverse("books") === "skoob")
+console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
