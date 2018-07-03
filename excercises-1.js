@@ -58,11 +58,14 @@ console.assert(avg(123,234,345) === 234)
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
-/*
+function getLength(str) {
+	return str.length
+}
+
 console.assert(getLength('Michael') === 7)
 console.assert(getLength('Javascript') === 10)
 console.assert(getLength('supercalifragilisticexpialidocious') === 34)
-*/
+
 
 // Q4
 // Write a function called `greaterThan` that takes
