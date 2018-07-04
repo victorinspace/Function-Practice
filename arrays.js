@@ -20,11 +20,12 @@ var instructors = [
 // 1. Find largest number
 // ---------------------------
 function largestNumber(a) {
-	for(let i = 0; i < a.	; i++) {
-		console.log("Doing the thing!")
-
-		if (a[i].length > 3) {
-			console.log("Question 1: " + a[i])
+	for(let i = 0; i < a.length; i++) {
+		let x = a[i]
+		if (x > a.length) {
+			if (a[i] > i){
+				console.log("Question 1: " + a[i])
+			}
 		}
 	}
 }
