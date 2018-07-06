@@ -19,21 +19,31 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
-function largestNumber(a) {
-	for(let i = 0; i < a.length; i++) {
-		let x = a[i]
-		if (x > a.length) {
-			if (a[i] > i){
-				console.log("Question 1: " + a[i])
-			}
-		}
+var largest = numbers[0]
+for (let i = 0; i < numbers.length; i++) {
+	if (numbers[i] > largest) {
+		largest = numbers[i]
 	}
 }
-largestNumber(numbers)
+console.log(largest)
+
+// // function largestNumber(a) {
+// // 	for(let i = 0; i < a.length; i++) {
+// // 		let x = a[i]
+// // 		if (x > a.length) {
+// // 			if (a[i] > i){
+// // 				console.log("Question 1: " + a[i])
+// // 			}
+// // 		}
+// // 	}
+// // }
+// largestNumber(numbers)
 
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
+
+
 function longestString(a) {
 	for(let i = 0; i < a.length; i++) {
 		if (a[i].length > 6) {

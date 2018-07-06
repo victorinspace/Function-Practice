@@ -5,11 +5,7 @@
 // ---------------------
 
 function max(num1, num2) {
-	if (num1 > num2) {
-		return num1
-	} else if (num2 > num1) {
-		return num2
-	}
+	if num1 > num2 ? num1 : num2
 }
 
 console.assert(max(2,3) === 3)
@@ -22,13 +18,18 @@ console.assert(max(-23, 12) === 12)
 // ---------------------
 
 function maxOfThree(num1, num2, num3) {
+	// if (num1 > num2 && num1 > num3) {
+	// 	return num1
+	// } else if (num2 > num1 && num2 > num3) {
+	// 	return num2
+	// } else {
+	// 	return num3
+	// }
+
 	if (num1 > num2 && num1 > num3) {
 		return num1
-	} else if (num2 > num1 && num2 > num3) {
-		return num2
-	} else {
-		return num3
 	}
+	return num2 > num3 ? num1 : num3
 }
 
 console.assert(maxOfThree(2,56,3) === 56)
@@ -77,6 +78,9 @@ function isVowel(str) {
 			return false
 			break
 	}
+
+	// str = str.toLowerCase
+
 	
 }
 
@@ -126,13 +130,24 @@ console.assert(rovarspraket(0) === "0")
 // return the string "ratset gaj".
 // ---------------------
 
+// function translate (str) {
+// 	for (let 0 = 0; i < str.length; i++) {
+// 		if (!isVowel(str.charAt(i))) {
+// 			newStr = str.charA(i) + "o" + str.charAt(i)
+// 		} else {
+// 			newStr += 
+// 		}
+// 	}
+// }
+
 
 function reverse(str) {
-	let splitStr = str.split("")
-	let reverseArr = splitStr.reverse()
-	let joinArr = reverseArr.join("")
-	
-	return joinArr
+	return str.splitStr("").reverse().join("")
+
+	// let splitStr = str.split("")
+	// let reverseArr = splitStr.reverse()
+	// let joinArr = reverseArr.join("")
+	// return joinArr
 }
 
 
